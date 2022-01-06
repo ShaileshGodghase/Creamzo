@@ -1,0 +1,195 @@
+/* NAVIGATION BAR
+*****************************/
+.logo-icon{
+    width: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Navbar{
+    color: white;
+    background-color: black;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+}
+.Navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Navbar .logo img{
+    width: 20%;
+}
+.Navbar .menu-list{
+    display: inline-flex;
+    align-items: center;
+}
+.menu-list li{
+    list-style: none;
+}
+.menu-list li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding-left: 10px;
+}
+.menu-list li a:hover{
+    color: turquoise;
+}
+.icon{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.menu-list .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.activelink{
+    color: turquoise;
+  }
+/*********** INPUT AREA
+***************************/
+.input-container {
+    display: flex;
+    min-width: 165%;
+  }
+  .input-container button{
+    background: turquoise;
+    border: none;
+    cursor: pointer;
+  }
+  .input-icon {
+    position: absolute;
+    color: black;
+    min-width: 50px;
+    text-align: center;
+    margin-top: -8px;
+    font-size: 18px;
+}
+.input-field {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    outline: none;
+    height: 48px;
+    border-radius: 20px;
+    font-size: 18px;
+    border: 2px solid turquoise;
+}
+  
+.input-field:focus {
+    border: 2px solid turquoise;
+}
+.join-us button{
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    font-size: 18px;
+    border: none;
+    background-color: #efefef;
+    transition: all 0.3s;
+    margin-left: 280px;
+    min-width: 125px;
+  }
+  .join-us button:hover{
+      background-color: turquoise;
+  }
+  .nav-categories{
+      display: none;
+  }
+ /**********************************************************************************
+ *********************** MEDIA  QUERIES *******************************************/
+  
+ @media (max-width: 1230px) {
+    .content{
+      padding: 0 60px;
+    }
+}
+@media (max-width: 1100px) {
+    .content{
+      padding: 0 40px;
+    }
+}
+@media (max-width: 900px) {
+    .content{
+    padding: 0 30px;
+    }
+}
+@media (max-width: 868px) {
+    .main-title{
+        background-position: inherit;
+        background-size: auto;
+    }
+    /******************** NAVIGATION BAR ******************/
+    body.disabled{
+        overflow: hidden;
+    }
+    .icon{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .Navbar .menu-list{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        /*background: url('./Images/pattern.png');*/
+        background-color: black;
+        transition: all 0.3s ease;
+    }
+    .Navbar.show .menu-list{
+        left: 0%;
+    }
+    .Navbar .menu-list li{
+        margin-top: 45px;
+    }
+    .Navbar .menu-list li a{
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .Navbar.show .menu-list li a{
+        margin-left: 0px;
+    }
+    .search{
+        width: 60%;
+        margin: 50px auto 0 auto; 
+    }
+    .input-container{
+        min-width: 100%;
+    }
+    .join-us button{
+        margin: 20px 0;
+    }
+    .nav-categories{
+        display: block;
+        width: 50%;
+    }
+    .Navbar .logo img{
+        width: 50%;
+    }
+}
+@media (max-width: 380px) {
+     /******************** NAVIGATION BAR ******************/
+    .Navbar .logo img{
+        width: 40%;
+    }
+}

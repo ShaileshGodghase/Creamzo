@@ -1,0 +1,82 @@
+.category{
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+.all-posts{
+    margin: 40px;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+}
+
+.card{
+    /* display: grid; */
+    /* grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "date"; */
+
+    display: flex;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0,0.9);
+    border: 2px solid silver;
+    flex-direction: column;
+    min-width: 320px;
+    justify-content: center;
+
+}
+.card-image{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.card-text{
+    /* border: 1px solid silver; */
+    margin: 25px;
+    overflow: hidden;
+}
+.card-text h2{
+    margin: 20px 0;
+}
+.card-text h4{
+    margin-bottom: 10px;
+}
+.card-text p{
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+.card-date{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*******************************  MEDIA QUERIES
+***************************************************/
+
+@media (max-width: 1230px) {
+    .all-posts{
+        padding: 0px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .all-posts{
+        grid-template-columns: repeat(2,auto);
+    }
+  }
+  @media (max-width: 900px) {
+    .all-posts{
+        grid-template-columns: repeat(1,auto);
+    }
+  }
+  @media (max-width: 868px) {   
+      .all-posts{
+          margin: 30px 0;
+      }
+  }
+  @media (max-width: 380px) {
+  }
