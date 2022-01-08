@@ -1,0 +1,90 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+}
+.navbar a img{
+    width: 50%;
+}
+.search-wrapper{
+    margin-left: 100px;
+}
+.search-icon{
+    position: absolute;
+    color: #848484;
+    min-width: 50px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+}
+.search-field{
+    min-width: 600px;
+    padding: 10px 10px 10px 40px;
+    outline: none;
+    height: 48px;
+    border-radius: 20px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+}
+.search-join-us button{
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    font-size: 18px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    transition: all 0.3s;
+    min-width: 125px;
+    cursor: pointer;
+    margin-left: 250px;
+}
+.search-join-us button:hover{
+    background-color: darkred;
+}
+ /**********************************************************************************
+ *********************** MEDIA  QUERIES *******************************************/
+  
+ @media (max-width: 1230px) {
+    .content{
+      padding: 0 60px;
+    }
+}
+@media (max-width: 1100px) {
+    .content{
+      padding: 0 40px;
+    }
+    .navbar a img{
+        width: 72%;
+    }
+}
+@media (max-width: 900px) {
+    .content{
+    padding: 0 30px;
+    }
+    .search-wrapper{
+        display: none;
+    }
+    .search-join-us button{
+        min-width: 125px;
+        padding: 5px 10px;
+        margin-left: 0;
+    }
+    .navbar a img{
+        width: 80%;
+    }
+}
+@media (max-width: 868px) {
+    .navbar a img{
+        width: 60%;
+    }
+}
+@media (max-width: 380px) {
+    .navbar a img{
+        width: 70%;
+    }
+}

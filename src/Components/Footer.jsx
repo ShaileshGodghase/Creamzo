@@ -8,16 +8,11 @@ function Footer() {
         <footer className="footer-section">
             <div className="content">
                 <div className="footer-content">
-                    <p><Link to="/">Trending</Link></p>
-                    <p><Link to="/">World</Link></p>
-                    <p><Link to="/">Business</Link></p>
-                    <p><Link to="/technology">Technology</Link></p>
-                    <p><Link to="/entertainment">Entertainment</Link></p>
-                    <p><Link to="/">Sports</Link></p>
-                    <p><Link to="/">Science</Link></p>
-                    <p><Link to="/">Health</Link></p>
-                    <p><Link to="/fashion">Fashion</Link></p>
-                    <p><Link to="/">Literature</Link></p>
+                    <p><Link to="/">Creamzo</Link></p>
+                    <p><Link to="/">Contact Us</Link></p>
+                    <p><Link to="/">About Us</Link></p>
+                    <p><Link to="/technology">Terms</Link></p>
+                    <p><Link to="/entertainment">Join Us</Link></p>
                 </div>
             </div>
         </footer>  

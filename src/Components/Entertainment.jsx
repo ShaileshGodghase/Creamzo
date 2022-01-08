@@ -6,10 +6,9 @@ function Entertainment() {
     const [data, setData] = useState([]);
     
     useEffect(()=>{
-        axios.request('https://creamzo-filters.herokuapp.com/posts?category_id=2')
+        axios.request('https://creamzo-filters.herokuapp.com/posts?1')
         .then((response)=>{
-            setData(response.contents)
-            console.log(response)
+            setData(response.data)
         })
         .catch((error)=>{
             console.log(error)
@@ -31,10 +30,10 @@ function Entertainment() {
                                     <Post 
                                     key={item._id}
                                     title={item.title}
-                                    description={item.contents[0].content_body}
-                                    date="date"
+                                    description={item.paragraph}
+                                    author={item.author_name}
                                     category={item.category_name}
-                                    image={item.contents[1].content_body}
+                                    image={item.image}
                                     />
                                     )
                                 })

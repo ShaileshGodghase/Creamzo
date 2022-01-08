@@ -8,7 +8,7 @@ function Technology() {
     useEffect(()=>{
         let isMounted = true;
 
-        axios.request('https://creamzo-filters.herokuapp.com/posts?category_id=1')
+        axios.request('https://creamzo-filters.herokuapp.com/posts?1')
         .then((response)=>{
             setData(response.data)
         })
@@ -34,10 +34,10 @@ function Technology() {
                                     <Post 
                                     key={item._id}
                                     title={item.title}
-                                    description={item.contents[0].content_body}
+                                    description={item.paragraph}
                                     author={item.author_name}
                                     category={item.category_name}
-                                    image={item.contents[2].content_body}
+                                    image={item.image}
                                     />
                                     )
                                 })

@@ -1,6 +1,6 @@
 .footer-section{
     padding: 25px 0;
-    background-color: black;
+    background-color: white;
 }
 
 .footer-content{
@@ -8,16 +8,19 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    width: 32%;
+    margin: 0 auto;
 }
 
 .footer-content p a{
-    color: white;
+    color: black;
+    font-weight: 700;
     text-decoration: none;
     margin: 5px;
 }
-.footer-content p a:hover{
+/* .footer-content p a:hover{
     color: turquoise;
-}
+} */
 
 /*******************************  MEDIA QUERIES
 ***************************************************/

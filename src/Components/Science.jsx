@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from 'react'
 import axios from "axios";
 import Post from './Post'
 
-function LandingPage() {
-
+function Science() {
     const [data, setData] = useState([]);
     
     useEffect(()=>{
-        let isMounted = true;
         axios.request('https://creamzo-filters.herokuapp.com/posts?1')
         .then((response)=>{
             setData(response.data)
@@ -15,20 +13,19 @@ function LandingPage() {
         .catch((error)=>{
             console.log(error)
         })
-        return () => { isMounted = false };
-    })
+    },[data])
     return (
         <>
-        <section className="trending-section" style={{margin: "-30px 0"}}>
+        <section className="trending-section" style={{margin: "50px 0"}}>
             <div className="content">
                 <div className="trending">
                     <div className="category">
-                        <h1>Trending</h1>
+                        <h1>Science</h1>
                     </div>
-                    <section className="post-section">
+                    <section className="post-section" style={{backgroundColor: "whitesmoke"}}>
                         <div className="all-posts">
                             {
-                                data.map((item,index)=>{
+                                data.map((item)=>{
                                     return(
                                     <Post 
                                     key={item._id}
@@ -50,4 +47,4 @@ function LandingPage() {
     )
 }
 
-export default LandingPage
+export default Science

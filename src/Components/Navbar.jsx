@@ -27,7 +27,7 @@ function Navbar() {
                     </div>
                     <div>
                     <Link to="/" onClick={menuCloseHandler}>
-                            <img className="nav-categories" src={Logo} style={{margin: "0 auto"}} alt="Creamzo" />
+                        <img className="nav-categories" src={Logo} style={{margin: "0 auto"}} alt="Creamzo" />
                     </Link>
                     </div>
                     <div className="search">
@@ -42,6 +42,7 @@ function Navbar() {
                         <button>JOIN US</button>
                     </div>
                 </ul>
+                <div style={{width:"100px"}}></div>
                 <div className={menuState ? "icon menu-btn hide":"icon menu-btn"} onClick={menuClickHandler}>
                     <i className="fas fa-bars"></i>
                 </div>  
