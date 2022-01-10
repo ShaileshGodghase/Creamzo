@@ -6,6 +6,7 @@ function Business() {
     const [data, setData] = useState([]);
     
     useEffect(()=>{
+        let isMounted = true;
         axios.request('https://creamzo-filters.herokuapp.com/posts?1')
         .then((response)=>{
             setData(response.data)
@@ -13,7 +14,8 @@ function Business() {
         .catch((error)=>{
             console.log(error)
         })
-    },[data])
+        return () => { isMounted = false };
+    },[])
     return (
         <>
         <section className="trending-section" style={{margin: "50px 0"}}>

@@ -8,7 +8,7 @@ function Technology() {
     useEffect(()=>{
         let isMounted = true;
 
-        axios.request('https://creamzo-filters.herokuapp.com/posts?1')
+        axios.request('https://creamzo-client-backend.herokuapp.com/posts?category_name=technology')
         .then((response)=>{
             setData(response.data)
         })

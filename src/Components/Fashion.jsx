@@ -16,7 +16,7 @@ function Fashion() {
             console.log(error)
         })
         return () => { isMounted = false };
-    })
+    },[])
     return (
         <>
         <section className="trending-section" style={{margin: "50px 0"}}>
