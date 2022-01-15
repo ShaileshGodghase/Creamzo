@@ -9,10 +9,10 @@ function Footer() {
             <div className="content">
                 <div className="footer-content">
                     <p><Link to="/">Creamzo</Link></p>
-                    <p><Link to="/">Contact Us</Link></p>
-                    <p><Link to="/">About Us</Link></p>
-                    <p><Link to="/technology">Terms</Link></p>
-                    <p><Link to="/entertainment">Join Us</Link></p>
+                    <p><Link to="/contact">Contact Us</Link></p>
+                    <p><Link to="/about">About Us</Link></p>
+                    <p><Link to="/terms">Terms</Link></p>
+                    <p><Link to="/joinus">Join Us</Link></p>
                 </div>
             </div>
         </footer>  

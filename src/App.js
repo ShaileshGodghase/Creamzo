@@ -14,6 +14,7 @@ import Sports from './Components/Sports';
 import Science from './Components/Science';
 import Literature from './Components/Literature';
 import Health from './Components/Health';
+import Terms from './Components/Terms';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="health" element={<Health />} />
         <Route path="fashion" element={<Fashion />} />
         <Route path="literature" element={<Literature />} />
+        <Route path="terms" element={<Terms />} />
       </Routes>
       <Footer />
     </BrowserRouter>
